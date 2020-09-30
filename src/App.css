@@ -1,0 +1,252 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Mulish', sans-serif;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo,
+.contact {
+	display: flex;
+}
+
+.logo > img {
+	margin-right: 1rem;
+}
+
+.contact > img {
+	height: 2rem;
+}
+
+hr {
+	background-color: #f5f5f5;
+	border: none;
+	height: 1rem;
+}
+
+.detailPlan,
+.details,
+.header,
+.uploads,
+.footer {
+	padding: 2rem;
+}
+
+.detailPlan > h1 {
+	font-weight: 500;
+	color: #999999;
+	font-size: 2.5rem;
+}
+
+.cardContainer {
+	display: flex;
+	gap: 2rem;
+	margin-top: 4rem;
+	position: relative;
+}
+
+.card {
+	height: auto;
+	padding: 3rem;
+	width: 33.33%;
+	border-radius: 0.5rem;
+	border: 1px solid #dddddd;
+}
+
+.active {
+	border: 0.3rem solid #ffbb00;
+}
+
+.card > h1 {
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+
+.card > h1 > span {
+	font-weight: 400;
+}
+
+.card > h1 > span > img {
+	height: 2rem;
+}
+
+.card > p {
+	font-size: 2rem;
+	color: #999999;
+	margin-top: 1rem;
+}
+
+.pricing {
+	color: #444444;
+	margin-top: 3rem;
+	font-size: 3.5rem !important;
+}
+
+.pricing > span {
+	font-size: 2rem;
+	font-weight: 600 !important;
+	color: #00aa55;
+}
+
+.tag {
+	position: absolute;
+	padding: 0.5rem 2rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	background-color: #0bb86b;
+	color: #ffffff;
+	width: fit-content;
+	border-radius: 1rem;
+	top: 16rem;
+	left: 6rem;
+	z-index: 99;
+}
+
+.details > h1 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+
+.material-textfield {
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+label {
+	position: absolute;
+	font-size: 2rem;
+	left: 0;
+	top: 37%;
+	transform: translateY(-50%);
+	background-color: white;
+	color: gray;
+	padding: 0 0.3rem;
+	margin: 0 0.5rem;
+	transition: .1s ease-out;
+	transform-origin: left top;
+	pointer-events: none;
+}
+input {
+	font-size: 2rem;
+	outline: none;
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 2rem 0.7rem;
+	color: gray;
+	transition: 0.1s ease-out;
+	width: 100%;
+}
+input:focus {
+	border: 2px solid #ffbb00;
+}
+input:focus + label {
+	color: #000000;
+	font-weight: bold;
+	top: 0;
+	transform: translateY(-50%) scale(.9);
+}
+input:not(:placeholder-shown) + label {
+	top: 0;
+	transform: translateY(-50%) scale(.9);
+}
+
+.uploads > h1 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+
+.pancard {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 0.2rem dashed #dddddd;
+	padding: 2rem;
+	background-color: #fafafa;
+	font-size: 1.5rem;
+	margin-bottom: 5rem;
+}
+
+.uploads img {
+	height: 2rem;
+}
+
+.costbreakup {
+	padding: 2rem;
+	border: 1px solid #dddddd;
+	background-color: #fafafa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: large;
+	color: #999999;
+	position: relative;
+}
+
+.costbreakup > h3 {
+	font-weight: 600;
+}
+
+.costbreakup > img {
+	height: 1rem;
+	margin-left: 1rem;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.columnwise h2 {
+	font-size: 2.5rem;
+	color: #999999;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+.pricinginfo {
+	font-size: 4rem;
+}
+
+.pricinginfo > span {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #444444;
+}
+
+.rowwise {
+	display: flex;
+	gap: 2rem;
+}
+
+.rowwise > img {
+	border: 1px solid #444444;
+	padding: 3rem;
+	border-radius: 0.5rem;
+	width: 9rem;
+}
+
+.rowwise button {
+	padding: 1.5rem 5rem;
+	font-size: 2.5rem;
+	font-weight: 900;
+	background-color: #ffbb00;
+	outline: none;
+	border: none;
+	border-radius: 0.5rem;
+}
+
+@media (max-width: 600px) {
+	html {
+		font-size: 30%;
+	}
+}
